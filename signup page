@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+</head>
+<body>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:black;
+    margin: 50px;
+}
+
+.container {
+    border: 1px solid white;
+    padding: 200px;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+   
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top:auto ;
+    
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: start;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  
+}
+
+button {
+    background-color: #0069d9;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a70bc;
+}
+a{
+  color: #ccc;
+  margin-left: 6px;
+}
+</style>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <br>
+            <button type="submit">Sign Up</button>
+            <br>
+            <br><br><br><br>
+    
+            
+            <a href="login.html" class="btn">Login</a>
+        </form>
+    </div>
+</body>
+</html>
