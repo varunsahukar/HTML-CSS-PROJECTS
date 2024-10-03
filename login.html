@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: black;
+    }
+    
+    .login-container {
+      border: 1px solid white;
+      padding: 200px;
+      margin: 0 auto;
+      width: 400px;
+      height: 300px;
+     
+    }
+    
+    h1 {
+      text-align: center;
+      font-style:normal;
+      color: white;
+    }
+    
+    label {
+      display: block;
+      color: white;
+      text-align:start;
+    }
+    
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      
+    }
+    
+    button {
+      background-color:rgb(41, 118, 211);
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        height: 35px;
+        width: 70px;
+        cursor: pointer;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        transition: box-shadow 0.15s;
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+    
+    button:hover {
+      background-color: #0069d9;
+    }
+    button:active {
+      opacity: 0.7;
+    }
+    a{
+      color: #ccc;
+      margin-left: 6px;
+    }
+  </style>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="post">
+            <label for="username">Username/Email ID:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+            <a href="another.html" class="btn">signup</a>
+        </form>
+    </div>
+</body>
+</html>
